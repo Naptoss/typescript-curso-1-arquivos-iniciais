@@ -1,5 +1,5 @@
 export class View {
     constructor(selector) {
-        this.elemento = document.querySelector(selector);
+        this.element = document.querySelector(selector);
     }
 }
