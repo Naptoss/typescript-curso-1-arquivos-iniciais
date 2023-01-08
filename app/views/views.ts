@@ -1,7 +1,7 @@
 export class View {
-    private elemento: HTMLElement
+    protected element: HTMLElement
 
     constructor(selector: string) {
-        this.elemento = document.querySelector(selector)
+        this.element  = document.querySelector(selector)
     }
 }
