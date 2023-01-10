@@ -25,6 +25,7 @@ export class NegociacaoController {
         this.negociacoesView.update(this.negociacoes)
         this.limparform()
         this.mensagemView.update("Negociação registrada com sucesso")
+
     }
 
     criaNegociacao(): Negociacao {
