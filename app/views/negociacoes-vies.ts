@@ -1,10 +1,10 @@
 import { Negociacoes } from "../models/negociacoes.js"
 import { View } from "./views.js"
 
-export class NegociacoesView extends View {
+export class NegociacoesView extends View<Negociacoes> {
 
     
-    template(model: Negociacoes): string {
+    protected template(model: Negociacoes): string {
         return `
         <table class="table table-hover table-bordered" >
             <thead>
@@ -28,13 +28,6 @@ export class NegociacoesView extends View {
         </table>
         `
     }
-
-    update(model: Negociacoes): void {
-        const template = this.template(model)
-        console.log(template)
-        this.element.innerHTML = template
-    }
-
 
 }
     
